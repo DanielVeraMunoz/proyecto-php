@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--El form action me indica a que archivo php enviaré la información que escriba el usuario por los inputs. Uso POST y no GET para que sea mas seguro y no aparezca todo en la URL como en el GET(donde si aparece en la URL).-->
+
+    <h1>Formulario Prueba</h1>
+    <form action="process.php" method="POST">
+       
+        <!-- Creo Username y Email con su caja de input para que inserte el usuario la información. Le doy type para que -->
+
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" required><br><br>        
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
