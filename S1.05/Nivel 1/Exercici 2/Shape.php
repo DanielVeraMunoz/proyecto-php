@@ -1,21 +1,15 @@
 <?php
 
-/* EXERCICI 2 */
-
-echo "\n";
-echo "~Exercici 1~\n";
-echo "\n";
+declare(strict_types=1);
 
 abstract class Shape{
-    protected $width;
-    protected $lenght;
+    protected float $width;
+    protected float $length;
 
-   
-   public function __construct($width, $lenght)
-   {
-    $this->width = $width;
-    $this->lenght = $lenght;
-   }
+    public function __construct($width, $length){
+        $this->width = $width;
+        $this->lenght = $length;
+    }
 
-    abstract public function calculateArea();
+    abstract public function calculateArea(): float;
 }

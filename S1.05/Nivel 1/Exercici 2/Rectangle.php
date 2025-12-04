@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
 require_once "Shape.php";
+
 
 class Rectangle extends Shape {
     
-    public function calculateArea(){
-        return $this->width * $this->lenght;
+    public function calculateArea(): float{
+        return $this->width * $this->length;
     }
 
 }

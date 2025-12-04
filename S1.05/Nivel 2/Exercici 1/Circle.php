@@ -5,15 +5,11 @@ require_once "Shape.php";
 class Circle extends Shape{
     protected float $radio; 
 
-    public function __construct($radio)
-    {
-    return $this->radio = $radio;
+    public function __construct($radio){
+        return $this->radio = $radio;
     }
 
-    function calculateArea()
-    {
-        return ($this->radio * 2) * 3.1415;
+    function calculateArea(): float{
+        return ($this->radio ** 2) * 3.1415;
     }
-
-
 }

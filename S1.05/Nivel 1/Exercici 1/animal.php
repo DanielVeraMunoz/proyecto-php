@@ -1,17 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 abstract class Animal {
     private string $name;
 
-    public function __construct($name)
-    {
-    $this->name = $name;
+    public function __construct($name){
+        $this->name = $name;
     }
 
-    abstract function talk();
+    abstract public function talk(): string;
 
-    
-    public function getName(){
+    public function getName(): string{
         return $this->name;
     }
     
