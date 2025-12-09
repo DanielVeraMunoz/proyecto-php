@@ -1,0 +1,19 @@
+{
+    "name": "danielo/nivel3",
+    "description": "Exercise lvl 3",
+    "type": "project",
+    "require": {
+        "nesbot/carbon": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Danielo\\Nivel3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Danielo",
+            "email": "dani.vmg91@gmail.com"
+        }
+    ]
+}
