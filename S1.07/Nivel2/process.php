@@ -51,11 +51,9 @@ function validateEmail(string $email){
 
 try {
     validateUserName($userName);
-    validatePassword($password);
     validateEmail($email);
 
     $_SESSION['username'] = $userName;
-    $_SESSION['password'] = $password;
     $_SESSION['email'] = $email;
 
     $user = new User($userName, $password, $email);
@@ -66,11 +64,6 @@ try {
     echo "</div>";
 
     } catch (UserNameException $e){
-        echo "<div class='user-info'>";
-        echo "<h2>ERROR</h2>";
-        echo $e->getMessage();
-        echo "</div>";
-    } catch (PasswordException $e){
         echo "<div class='user-info'>";
         echo "<h2>ERROR</h2>";
         echo $e->getMessage();

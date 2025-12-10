@@ -1,8 +1,8 @@
 <?php
 
 $name = 4324;
-$passowrd = "jdasjd";
-$email = "holi@caracoli.com";
+$passoword = "";
+$email = "test@example.com";
 
 
 function validateName($name){

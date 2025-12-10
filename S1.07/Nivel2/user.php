@@ -15,7 +15,6 @@ class User{
 
 public function __toString(){
     return "Username: " . $this->username . "<br>" .
-    "Password: " . $this->password . "<br>" . 
     "Email: " . $this->email;
 }
 
