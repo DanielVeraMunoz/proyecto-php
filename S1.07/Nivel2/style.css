@@ -1,0 +1,67 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: brown;
+font-family: sans-serif;
+color: brown;
+}
+
+.target-web{
+    background-color: rgb(255, 181, 222);
+    padding: 20px 80px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    border-radius: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    text-align: center;
+    padding: 20px;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: brown;
+    color: aliceblue;
+    margin-top: 30px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+input{
+    border: none;
+}
+
+.user-info{
+    background-color:rgb(255, 181, 222);
+    padding: 10px 30px 30px 30px;
+    border-radius: 30px;
+    text-align: center;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+    
+
+
+}
+
+
+
+
