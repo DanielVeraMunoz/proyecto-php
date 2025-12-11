@@ -49,6 +49,8 @@ function validateEmail(string $email){
     return true;
 }
 
+//Update: Aquí tenia la validación también del password pero el GitGuardian me asustó me dijo que quedaría guardado en historial o algo así que no entendí muy bien y decidí eliminar el guardar la SESSION del password... aunque no he llegado a entender si tiene que ver con esto... profundizaré en esta cuestión pero no me ha vuelto a saltar... Al igual que eliminé en process.php el mostrar la contraseña así en texto plano sin encriptarla al usuario. Directamente no muestro al usuario el pass y solo muestro el usuario y mail. 
+
 try {
     validateUserName($userName);
     validateEmail($email);
